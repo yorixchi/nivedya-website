@@ -1,0 +1,813 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Nivedya Construction & Real Estate Services | Kazhakkoottam, Trivandrum</title>
+<meta name="description" content="Nivedya Construction & Real Estate Services — residential builders and property consultants near UST Global & Infosys, Kazhakkoottam, Thiruvananthapuram. 4.7★ rated. Call 090741 30839.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Work+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --charcoal-teak: #221b16;
+    --panel-brown: #2e241d;
+    --panel-brown-2: #362b22;
+    --laterite: #b5502e;
+    --laterite-bright: #cf6540;
+    --brass: #c9a227;
+    --brass-dim: #a8862190;
+    --leaf: #5c7a4a;
+    --off-white: #f0e9dc;
+    --off-white-dim: #cabfaa;
+    --hairline: #4a3c30;
+
+    --font-display: "Fraunces", serif;
+    --font-body: "Work Sans", sans-serif;
+    --font-mono: "JetBrains Mono", monospace;
+  }
+
+  *{ box-sizing:border-box; }
+  html{ scroll-behavior:smooth; }
+  @media (prefers-reduced-motion: reduce){
+    html{ scroll-behavior:auto; }
+    *{ animation-duration:0.01ms !important; animation-iteration-count:1 !important; transition-duration:0.01ms !important; }
+  }
+
+  body{
+    margin:0;
+    background:var(--charcoal-teak);
+    color:var(--off-white);
+    font-family:var(--font-body);
+    line-height:1.55;
+    -webkit-font-smoothing:antialiased;
+  }
+
+  img,svg{ display:block; max-width:100%; }
+  a{ color:inherit; }
+
+  .wrap{
+    max-width:1160px;
+    margin:0 auto;
+    padding:0 28px;
+  }
+
+  ::selection{ background:var(--laterite); color:var(--off-white); }
+
+  a:focus-visible, button:focus-visible{
+    outline:2px solid var(--brass);
+    outline-offset:3px;
+    border-radius:2px;
+  }
+
+  /* ---------- brick coursing divider (signature element) ---------- */
+  .coursing{
+    width:100%;
+    height:14px;
+    background-image:
+      linear-gradient(90deg, var(--hairline) 1px, transparent 1px),
+      linear-gradient(var(--hairline) 1px, transparent 1px);
+    background-size: 58px 14px, 100% 14px;
+    background-color: var(--panel-brown);
+    background-position: 0 0, 0 0;
+    position:relative;
+  }
+  .coursing::after{
+    content:"";
+    position:absolute; inset:0;
+    background-image: linear-gradient(90deg, var(--hairline) 1px, transparent 1px);
+    background-size: 58px 14px;
+    background-position: 29px 0;
+    top:14px; height:14px;
+  }
+
+  /* ---------- top bar ---------- */
+  header.topbar{
+    position:sticky; top:0; z-index:40;
+    background:rgba(34,27,22,0.92);
+    backdrop-filter: blur(6px);
+    border-bottom:1px solid var(--hairline);
+  }
+  .topbar-inner{
+    display:flex; align-items:center; justify-content:space-between;
+    padding:16px 28px;
+    max-width:1160px; margin:0 auto;
+    gap:16px;
+  }
+  .brand{
+    display:flex; align-items:center; gap:10px;
+    font-family:var(--font-display);
+    font-weight:600;
+    font-size:1.15rem;
+    letter-spacing:0.2px;
+    text-decoration:none;
+  }
+  .brand .mark{ color:var(--laterite-bright); }
+  .rating-pill{
+    display:none;
+    align-items:center; gap:6px;
+    font-family:var(--font-mono);
+    font-size:0.78rem;
+    color:var(--off-white-dim);
+    border:1px solid var(--hairline);
+    padding:5px 10px;
+    border-radius:100px;
+  }
+  .rating-pill .stars{ color:var(--brass); letter-spacing:1px; }
+  @media(min-width:640px){ .rating-pill{ display:flex; } }
+
+  .call-btn{
+    display:inline-flex; align-items:center; gap:8px;
+    background:var(--laterite);
+    color:#fff8f2;
+    padding:10px 18px;
+    border-radius:4px;
+    text-decoration:none;
+    font-weight:600;
+    font-size:0.92rem;
+    white-space:nowrap;
+    transition: background 0.18s ease, transform 0.18s ease;
+    border:1px solid transparent;
+  }
+  .call-btn:hover{ background:var(--laterite-bright); transform:translateY(-1px); }
+  .call-btn svg{ width:16px; height:16px; }
+
+  /* ---------- hero ---------- */
+  .hero{
+    position:relative;
+    padding:88px 0 0;
+    overflow:hidden;
+  }
+  .hero-inner{
+    display:grid;
+    grid-template-columns: 1.1fr 0.9fr;
+    gap:48px;
+    align-items:center;
+    padding-bottom:64px;
+  }
+  @media(max-width:880px){
+    .hero-inner{ grid-template-columns:1fr; padding-bottom:40px; }
+  }
+
+  .eyebrow{
+    font-family:var(--font-mono);
+    font-size:0.78rem;
+    letter-spacing:0.14em;
+    text-transform:uppercase;
+    color:var(--brass);
+    display:flex; align-items:center; gap:10px;
+    margin-bottom:22px;
+  }
+  .eyebrow::before{
+    content:"";
+    width:26px; height:1px;
+    background:var(--brass);
+    display:inline-block;
+  }
+
+  h1{
+    font-family:var(--font-display);
+    font-weight:600;
+    font-size:clamp(2.3rem, 5.2vw, 3.7rem);
+    line-height:1.05;
+    margin:0 0 22px;
+    letter-spacing:-0.01em;
+  }
+  h1 em{
+    font-style:italic;
+    color:var(--laterite-bright);
+  }
+
+  .hero-sub{
+    font-size:1.08rem;
+    color:var(--off-white-dim);
+    max-width:46ch;
+    margin:0 0 34px;
+  }
+
+  .hero-ctas{
+    display:flex; flex-wrap:wrap; gap:14px;
+    margin-bottom:38px;
+  }
+  .btn-ghost{
+    display:inline-flex; align-items:center; gap:8px;
+    padding:12px 20px;
+    border:1px solid var(--hairline);
+    border-radius:4px;
+    text-decoration:none;
+    font-weight:600;
+    font-size:0.95rem;
+    color:var(--off-white);
+    transition:border-color 0.18s ease, color 0.18s ease;
+  }
+  .btn-ghost:hover{ border-color:var(--brass); color:var(--brass); }
+  .btn-primary{
+    display:inline-flex; align-items:center; gap:8px;
+    padding:12px 22px;
+    background:var(--laterite);
+    border-radius:4px;
+    text-decoration:none;
+    font-weight:700;
+    font-size:0.95rem;
+    color:#fff8f2;
+    transition:background 0.18s ease, transform 0.18s ease;
+  }
+  .btn-primary:hover{ background:var(--laterite-bright); transform:translateY(-1px); }
+
+  .hero-meta{
+    display:flex; flex-wrap:wrap;
+    gap:22px 30px;
+    font-family:var(--font-mono);
+    font-size:0.8rem;
+    color:var(--off-white-dim);
+    border-top:1px solid var(--hairline);
+    padding-top:20px;
+  }
+  .hero-meta strong{
+    display:block;
+    color:var(--off-white);
+    font-family:var(--font-body);
+    font-weight:600;
+    font-size:0.95rem;
+    margin-bottom:2px;
+  }
+
+  /* roofline SVG signature graphic */
+  .roofline-wrap{ position:relative; }
+  .roofline-wrap svg{ width:100%; height:auto; }
+  .roofline-path{
+    stroke-dasharray: 1400;
+    stroke-dashoffset: 1400;
+    animation: draw 1.8s ease forwards 0.2s;
+  }
+  @keyframes draw{ to{ stroke-dashoffset:0; } }
+  @media (prefers-reduced-motion: reduce){
+    .roofline-path{ animation:none; stroke-dashoffset:0; }
+  }
+
+  /* ---------- trust bar ---------- */
+  .trustbar{
+    background:var(--panel-brown);
+    border-top:1px solid var(--hairline);
+    border-bottom:1px solid var(--hairline);
+    padding:26px 0;
+  }
+  .trustbar .wrap{
+    display:flex; flex-wrap:wrap; gap:28px 44px;
+    align-items:center; justify-content:space-between;
+  }
+  .trust-item{
+    display:flex; align-items:center; gap:12px;
+  }
+  .trust-item .num{
+    font-family:var(--font-display);
+    font-size:1.7rem;
+    color:var(--brass);
+    font-weight:600;
+  }
+  .trust-item .label{
+    font-size:0.83rem;
+    color:var(--off-white-dim);
+    max-width:16ch;
+  }
+
+  /* ---------- sections ---------- */
+  section{ padding:84px 0; }
+  .section-head{
+    max-width:56ch;
+    margin-bottom:52px;
+  }
+  .section-head .eyebrow{ margin-bottom:16px; }
+  h2{
+    font-family:var(--font-display);
+    font-weight:600;
+    font-size:clamp(1.7rem, 3.4vw, 2.4rem);
+    margin:0 0 14px;
+    line-height:1.15;
+  }
+  .section-head p{
+    color:var(--off-white-dim);
+    font-size:1.02rem;
+    margin:0;
+  }
+
+  /* services */
+  .services-grid{
+    display:grid;
+    grid-template-columns:repeat(4, 1fr);
+    gap:1px;
+    background:var(--hairline);
+    border:1px solid var(--hairline);
+  }
+  @media(max-width:900px){ .services-grid{ grid-template-columns:repeat(2,1fr); } }
+  @media(max-width:560px){ .services-grid{ grid-template-columns:1fr; } }
+  .service-card{
+    background:var(--panel-brown);
+    padding:32px 26px;
+    transition:background 0.2s ease;
+  }
+  .service-card:hover{ background:var(--panel-brown-2); }
+  .service-card .icon{
+    width:38px; height:38px;
+    color:var(--laterite-bright);
+    margin-bottom:20px;
+  }
+  .service-card h3{
+    font-family:var(--font-display);
+    font-size:1.15rem;
+    font-weight:600;
+    margin:0 0 10px;
+  }
+  .service-card p{
+    color:var(--off-white-dim);
+    font-size:0.9rem;
+    margin:0;
+  }
+
+  /* process */
+  .process{ background:var(--panel-brown); }
+  .process-list{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:0;
+    counter-reset:step;
+  }
+  @media(max-width:880px){ .process-list{ grid-template-columns:1fr 1fr; } }
+  @media(max-width:520px){ .process-list{ grid-template-columns:1fr; } }
+  .step{
+    position:relative;
+    padding:28px 26px 28px 0;
+    border-left:1px solid var(--hairline);
+    padding-left:26px;
+  }
+  .step:first-child{ border-left:none; padding-left:0; }
+  @media(max-width:520px){
+    .step{ border-left:none !important; padding-left:0 !important; border-top:1px solid var(--hairline); padding-top:26px; }
+    .step:first-child{ border-top:none; padding-top:0; }
+  }
+  .step .step-num{
+    font-family:var(--font-mono);
+    color:var(--brass);
+    font-size:0.8rem;
+    margin-bottom:14px;
+    display:block;
+  }
+  .step h3{
+    font-family:var(--font-display);
+    font-size:1.1rem;
+    font-weight:600;
+    margin:0 0 10px;
+  }
+  .step p{ color:var(--off-white-dim); font-size:0.88rem; margin:0; }
+
+  /* why us */
+  .why-grid{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:56px;
+    align-items:start;
+  }
+  @media(max-width:880px){ .why-grid{ grid-template-columns:1fr; gap:36px; } }
+  .why-list{ list-style:none; margin:0; padding:0; display:flex; flex-direction:column; gap:24px; }
+  .why-list li{
+    display:flex; gap:16px;
+    padding-bottom:24px;
+    border-bottom:1px solid var(--hairline);
+  }
+  .why-list li:last-child{ border-bottom:none; padding-bottom:0; }
+  .why-list .check{
+    flex:none;
+    width:22px; height:22px;
+    color:var(--leaf);
+    margin-top:3px;
+  }
+  .why-list h4{
+    font-family:var(--font-body);
+    font-weight:600;
+    font-size:1.02rem;
+    margin:0 0 6px;
+  }
+  .why-list p{ margin:0; color:var(--off-white-dim); font-size:0.9rem; }
+
+  .rating-card{
+    background:var(--panel-brown);
+    border:1px solid var(--hairline);
+    border-radius:6px;
+    padding:36px;
+  }
+  .rating-card .score{
+    font-family:var(--font-display);
+    font-size:3.6rem;
+    font-weight:600;
+    color:var(--brass);
+    line-height:1;
+  }
+  .rating-card .stars-row{
+    color:var(--brass);
+    font-size:1.3rem;
+    letter-spacing:3px;
+    margin:14px 0 8px;
+  }
+  .rating-card .count{
+    font-family:var(--font-mono);
+    font-size:0.85rem;
+    color:var(--off-white-dim);
+    margin-bottom:24px;
+  }
+  .rating-card .divider{ height:1px; background:var(--hairline); margin:24px 0; }
+  .rating-card .quote-note{
+    font-size:0.88rem;
+    color:var(--off-white-dim);
+    font-style:italic;
+  }
+
+  /* location / contact */
+  .location{ background:var(--panel-brown); }
+  .location-grid{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:0;
+    border:1px solid var(--hairline);
+    border-radius:6px;
+    overflow:hidden;
+  }
+  @media(max-width:880px){ .location-grid{ grid-template-columns:1fr; } }
+  .location-info{
+    padding:44px;
+    background:var(--panel-brown-2);
+  }
+  .location-map{
+    padding:44px;
+    display:flex; flex-direction:column; justify-content:center;
+    gap:22px;
+  }
+  .info-row{
+    display:flex; gap:16px;
+    margin-bottom:26px;
+  }
+  .info-row:last-child{ margin-bottom:0; }
+  .info-row svg{
+    flex:none; width:22px; height:22px;
+    color:var(--laterite-bright);
+    margin-top:2px;
+  }
+  .info-row .label{
+    font-family:var(--font-mono);
+    font-size:0.72rem;
+    text-transform:uppercase;
+    letter-spacing:0.1em;
+    color:var(--off-white-dim);
+    margin-bottom:5px;
+  }
+  .info-row .value{
+    font-size:1rem;
+    line-height:1.5;
+  }
+  .info-row a.value{ text-decoration:none; color:var(--off-white); }
+  .info-row a.value:hover{ color:var(--brass); }
+  .status-open{
+    display:inline-flex; align-items:center; gap:7px;
+    color:#8fbf7a;
+    font-weight:600;
+  }
+  .status-open .dot{
+    width:7px; height:7px; border-radius:50%;
+    background:#8fbf7a;
+    box-shadow:0 0 0 3px rgba(143,191,122,0.2);
+  }
+
+  .cta-block{
+    text-align:center;
+  }
+  .cta-block .btn-primary{
+    padding:16px 30px;
+    font-size:1.02rem;
+    justify-content:center;
+    width:100%;
+  }
+  .cta-block .btn-ghost{
+    padding:16px 30px;
+    justify-content:center;
+    width:100%;
+    margin-top:12px;
+  }
+  .cta-block .helper{
+    font-size:0.8rem;
+    color:var(--off-white-dim);
+    margin-top:14px;
+    text-align:center;
+  }
+
+  /* footer */
+  footer{
+    padding:40px 0;
+    border-top:1px solid var(--hairline);
+  }
+  .footer-inner{
+    display:flex; flex-wrap:wrap;
+    justify-content:space-between;
+    align-items:center;
+    gap:16px;
+    font-size:0.83rem;
+    color:var(--off-white-dim);
+  }
+  .footer-inner .brand{ font-size:1rem; }
+
+  /* reveal on scroll */
+  .reveal{
+    opacity:0;
+    transform:translateY(18px);
+    transition:opacity 0.6s ease, transform 0.6s ease;
+  }
+  .reveal.in{
+    opacity:1;
+    transform:translateY(0);
+  }
+</style>
+</head>
+<body>
+
+<header class="topbar">
+  <div class="topbar-inner">
+    <a href="#top" class="brand"><span class="mark">N</span>ivedya</a>
+    <div class="rating-pill" aria-hidden="true">
+      <span class="stars">★★★★★</span>
+      <span>4.7 · 19 reviews</span>
+    </div>
+    <a class="call-btn" href="tel:+919074130839" aria-label="Call Nivedya Construction & Real Estate Services">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+      Call Now
+    </a>
+  </div>
+</header>
+
+<main id="top">
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="wrap hero-inner">
+      <div>
+        <div class="eyebrow">Kazhakkoottam · Thiruvananthapuram</div>
+        <h1>Homes and land, built for how <em>Kerala</em> actually lives.</h1>
+        <p class="hero-sub">Nivedya Construction &amp; Real Estate Services plans, builds and hands over residential projects along the Kazhakkoottam–Kulathoor corridor — steps from UST Global and Infosys.</p>
+        <div class="hero-ctas">
+          <a class="btn-primary" href="tel:+919074130839">
+            <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            090741 30839
+          </a>
+          <a class="btn-ghost" href="https://www.google.com/maps/dir/?api=1&destination=Nivedya+Construction+%26+Real+Estate+Services+Kulathoor+Kazhakkoottam+Thiruvananthapuram" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            Get Directions
+          </a>
+        </div>
+        <div class="hero-meta">
+          <div><strong>4.7 ★ (19 reviews)</strong>Google rating</div>
+          <div><strong id="openStatus">Open now</strong>Closes 7 pm</div>
+          <div><strong>Kulathoor, Kazhakkoottam</strong>NH Bypass, Service Rd</div>
+        </div>
+      </div>
+
+      <div class="roofline-wrap" aria-hidden="true">
+        <svg viewBox="0 0 480 360" fill="none">
+          <!-- layered kerala sloped-roof skyline, laterite tones -->
+          <polygon points="0,360 0,230 90,150 180,230 180,360" fill="#362b22"/>
+          <polygon points="150,360 150,190 260,95 370,190 370,360" fill="#2e241d"/>
+          <polygon points="330,360 330,240 400,175 470,240 470,360" fill="#241c16"/>
+          <path class="roofline-path" d="M0 230 L90 150 L180 230 L180 190 L260 95 L370 190 L370 240 L400 175 L470 240" stroke="#c9a227" stroke-width="3" fill="none" stroke-linejoin="round" stroke-linecap="round"/>
+          <g opacity="0.85">
+            <rect x="30" y="260" width="26" height="34" fill="#b5502e"/>
+            <rect x="80" y="260" width="26" height="34" fill="#b5502e"/>
+            <rect x="200" y="230" width="30" height="40" fill="#b5502e"/>
+            <rect x="300" y="230" width="30" height="40" fill="#b5502e"/>
+            <rect x="370" y="270" width="24" height="30" fill="#b5502e"/>
+          </g>
+          <g stroke="#4a3c30" stroke-width="1">
+            <line x1="0" y1="300" x2="480" y2="300"/>
+            <line x1="0" y1="330" x2="480" y2="330"/>
+          </g>
+        </svg>
+      </div>
+    </div>
+    <div class="coursing" aria-hidden="true"></div>
+  </section>
+
+  <!-- TRUST BAR -->
+  <div class="trustbar">
+    <div class="wrap">
+      <div class="trust-item">
+        <span class="num">4.7★</span>
+        <span class="label">Rated on Google, 19 reviews</span>
+      </div>
+      <div class="trust-item">
+        <span class="num">2 min</span>
+        <span class="label">From UST Global &amp; Infosys campus</span>
+      </div>
+      <div class="trust-item">
+        <span class="num">NH</span>
+        <span class="label">Bypass frontage, Kulathoor</span>
+      </div>
+      <div class="trust-item">
+        <span class="num">Mon–Sat</span>
+        <span class="label">Site &amp; office visits by appointment</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- SERVICES -->
+  <section id="services">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <div class="eyebrow">What we do</div>
+        <h2>Construction and real estate, under one roof.</h2>
+        <p>From a bare plot to a finished, move-in-ready home — one team handles the design, the build and the paperwork in between.</p>
+      </div>
+
+      <div class="services-grid reveal">
+        <div class="service-card">
+          <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M3 21h18M5 21V9l7-5 7 5v12M9 21v-6h6v6"/></svg>
+          <h3>Residential Construction</h3>
+          <p>Custom homes built to your plot, budget and family's routine — from foundation to finish.</p>
+        </div>
+        <div class="service-card">
+          <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M3 9.5 12 3l9 6.5M4.5 10v10h15V10"/></svg>
+          <h3>Real Estate Consultancy</h3>
+          <p>Buying or selling land and property across the Kazhakkoottam–Kulathoor belt, handled end to end.</p>
+        </div>
+        <div class="service-card">
+          <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M14 2 4 12l3 3L17 5zM14 2l6 6M4 12v6h6"/></svg>
+          <h3>Renovation &amp; Extension</h3>
+          <p>Refits, room additions and structural upgrades to existing homes, planned around daily life.</p>
+        </div>
+        <div class="service-card">
+          <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M4 22V4a2 2 0 0 1 2-2h9l5 5v15a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2Z"/><path d="M14 2v5h5M9 13h6M9 17h6"/></svg>
+          <h3>Turnkey &amp; Interiors</h3>
+          <p>Design-to-handover projects with a single point of contact, ready to move into.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="coursing" aria-hidden="true"></div>
+
+  <!-- PROCESS -->
+  <section class="process">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <div class="eyebrow">How a project runs</div>
+        <h2>Four stages, one site engineer through all of them.</h2>
+        <p>No handoffs between departments — the person who scopes your project is the one who sees it through.</p>
+      </div>
+
+      <div class="process-list reveal">
+        <div class="step">
+          <span class="step-num">Stage 1</span>
+          <h3>Site Visit &amp; Consultation</h3>
+          <p>We walk the plot with you, talk through the brief, budget and timeline.</p>
+        </div>
+        <div class="step">
+          <span class="step-num">Stage 2</span>
+          <h3>Design &amp; Estimate</h3>
+          <p>Layout, elevation and a transparent cost estimate before anything is finalised.</p>
+        </div>
+        <div class="step">
+          <span class="step-num">Stage 3</span>
+          <h3>Construction &amp; Supervision</h3>
+          <p>Day-to-day site supervision with regular updates, so nothing is a surprise.</p>
+        </div>
+        <div class="step">
+          <span class="step-num">Stage 4</span>
+          <h3>Handover &amp; After-Care</h3>
+          <p>Final walkthrough, documentation, and support after you've moved in.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHY US -->
+  <section id="why">
+    <div class="wrap why-grid">
+      <div class="reveal">
+        <div class="eyebrow">Why Nivedya</div>
+        <h2>Local builders, working local ground.</h2>
+        <ul class="why-list">
+          <li>
+            <svg class="check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>
+            <div>
+              <h4>Corridor knowledge</h4>
+              <p>Based right on the NH bypass at Kulathoor — we know the soil, the setback rules and the suppliers in this stretch of Kazhakkoottam.</p>
+            </div>
+          </li>
+          <li>
+            <svg class="check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>
+            <div>
+              <h4>Built for working professionals</h4>
+              <p>Many clients commute to UST Global and Infosys — site updates and approvals are scheduled around that.</p>
+            </div>
+          </li>
+          <li>
+            <svg class="check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>
+            <div>
+              <h4>One team, start to finish</h4>
+              <p>Construction and real estate advice from the same desk, so a land purchase and the build that follows stay coordinated.</p>
+            </div>
+          </li>
+          <li>
+            <svg class="check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>
+            <div>
+              <h4>Clear costing</h4>
+              <p>Estimates are itemised before work begins, so there's no ambiguity about what's included.</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+
+      <div class="rating-card reveal">
+        <div class="score">4.7</div>
+        <div class="stars-row">★★★★★</div>
+        <div class="count">Based on 19 Google reviews</div>
+        <div class="divider"></div>
+        <p class="quote-note">Read the latest reviews and ratings directly on Google before you get in touch — it's the fastest way to see what recent clients have said.</p>
+        <div class="divider"></div>
+        <a class="btn-ghost" style="width:100%; justify-content:center;" href="https://www.google.com/maps/dir/?api=1&destination=Nivedya+Construction+%26+Real+Estate+Services+Kulathoor+Kazhakkoottam+Thiruvananthapuram" target="_blank" rel="noopener">View on Google Maps</a>
+      </div>
+    </div>
+  </section>
+
+  <div class="coursing" aria-hidden="true"></div>
+
+  <!-- LOCATION / CONTACT -->
+  <section class="location" id="contact">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <div class="eyebrow">Visit or call</div>
+        <h2>Find us on the NH bypass, Kulathoor.</h2>
+        <p>Drop by the office or call ahead — we're open until 7 pm today.</p>
+      </div>
+
+      <div class="location-grid reveal">
+        <div class="location-info">
+          <div class="info-row">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            <div>
+              <div class="label">Address</div>
+              <div class="value">NH Bypass, Service Rd, near UST Campus &amp; Infosys, Kulathoor, Kazhakkoottam, Thiruvananthapuram, Kerala 695011</div>
+            </div>
+          </div>
+          <div class="info-row">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+            <div>
+              <div class="label">Hours</div>
+              <div class="value"><span class="status-open"><span class="dot"></span>Open now</span> — closes 7 pm</div>
+            </div>
+          </div>
+          <div class="info-row">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            <div>
+              <div class="label">Phone</div>
+              <a class="value" href="tel:+919074130839">090741 30839</a>
+            </div>
+          </div>
+          <div class="info-row">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg>
+            <div>
+              <div class="label">Plus Code</div>
+              <div class="value" style="font-family:var(--font-mono); font-size:0.92rem;">GVPH+WX Kazhakkoottam, Kerala</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="location-map cta-block">
+          <a class="btn-primary" href="tel:+919074130839">Call 090741 30839</a>
+          <a class="btn-ghost" href="https://www.google.com/maps/dir/?api=1&destination=Nivedya+Construction+%26+Real+Estate+Services+Kulathoor+Kazhakkoottam+Thiruvananthapuram" target="_blank" rel="noopener">Get Directions on Google Maps</a>
+          <p class="helper">Closes 7 pm today — calls answered fastest during office hours.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="wrap footer-inner">
+    <a href="#top" class="brand"><span class="mark">N</span>ivedya Construction &amp; Real Estate Services</a>
+    <div>Kulathoor, Kazhakkoottam, Thiruvananthapuram, Kerala 695011 · 090741 30839</div>
+  </div>
+</footer>
+
+<script>
+  // scroll reveal
+  const items = document.querySelectorAll('.reveal');
+  if('IntersectionObserver' in window){
+    const io = new IntersectionObserver((entries)=>{
+      entries.forEach(e=>{
+        if(e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target); }
+      });
+    }, { threshold: 0.15 });
+    items.forEach(i=>io.observe(i));
+  } else {
+    items.forEach(i=>i.classList.add('in'));
+  }
+</script>
+
+</body>
+</html>
